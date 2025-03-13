@@ -1,25 +1,29 @@
 package com.yanvelasco.bff_agendador_tarefas.domain.user.service;
 
-import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.EnderecoDTO;
-import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.TelefoneDTO;
-import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.UsuarioDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.request.EnderecoRequestDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.request.LoginRequestDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.request.TelefoneRequestDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.request.UsuarioRequestDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.response.EnderecoResponseDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.response.TelefoneResponseDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.response.UsuarioResponseDTO;
 
 public interface UsuarioService {
-    UsuarioDTO cadastrar(UsuarioDTO usuarioDTO);
+    UsuarioResponseDTO cadastrar(UsuarioRequestDTO usuarioRequestDTO);
 
-    String login(UsuarioDTO usuarioDTO);
+    String login(LoginRequestDTO loginRequestDTO);
 
-    UsuarioDTO buscarUsuarioPorEmail(String token,String email);
+    UsuarioResponseDTO buscarUsuarioPorEmail(String token, String email);
 
     void deletaUsuarioPorEmail(String token, String email);
 
-    UsuarioDTO atualizarDadosDoUsuario(String token, UsuarioDTO usuarioDTO);
+    UsuarioResponseDTO atualizarDadosDoUsuario(String token, UsuarioRequestDTO usuarioRequestDTO);
 
-    EnderecoDTO atualizarEndereco(String token, Long id, EnderecoDTO enderecoDTO);
+    EnderecoResponseDTO atualizarEndereco(String token, Long id, EnderecoRequestDTO enderecoRequestDTO);
 
-    TelefoneDTO atualizarTelefone(String token, Long id, TelefoneDTO telefoneDTO);
+    TelefoneResponseDTO atualizarTelefone(String token, Long id, TelefoneRequestDTO telefoneRequestDTO);
 
-    EnderecoDTO cadastrarEndereco(String token, EnderecoDTO enderecoDTO);
+    EnderecoResponseDTO cadastrarEndereco(String token, EnderecoRequestDTO enderecoRequestDTO);
 
-    TelefoneDTO cadastrarTelefone(String token, TelefoneDTO telefoneDTO);
+    TelefoneResponseDTO cadastrarTelefone(String token, TelefoneRequestDTO telefoneRequestDTO);
 }

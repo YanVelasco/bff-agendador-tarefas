@@ -1,4 +1,4 @@
-package com.yanvelasco.bff_agendador_tarefas.domain.user.dto;
+package com.yanvelasco.bff_agendador_tarefas.domain.user.dto.response;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TelefoneDTO {
+public class TelefoneResponseDTO {
     private Long id;
     private String numero;
     private String ddd;
