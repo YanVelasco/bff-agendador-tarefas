@@ -43,7 +43,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
     @Override
-    public EnderecoDTO atualizarEndereco(String token,Long id, EnderecoDTO enderecoDTO) {
+    public EnderecoDTO atualizarEndereco(String token, Long id, EnderecoDTO enderecoDTO) {
         return usuarioClient.atualizarEndereco(token, id, enderecoDTO);
     }
 

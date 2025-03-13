@@ -1,6 +1,5 @@
 package com.yanvelasco.bff_agendador_tarefas.domain.user.service;
 
-
 import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.EnderecoDTO;
 import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.TelefoneDTO;
 import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.UsuarioDTO;
@@ -16,7 +15,7 @@ public interface UsuarioService {
 
     UsuarioDTO atualizarDadosDoUsuario(String token, UsuarioDTO usuarioDTO);
 
-    EnderecoDTO atualizarEndereco(String token,Long id, EnderecoDTO enderecoDTO);
+    EnderecoDTO atualizarEndereco(String token, Long id, EnderecoDTO enderecoDTO);
 
     TelefoneDTO atualizarTelefone(String token, Long id, TelefoneDTO telefoneDTO);
 

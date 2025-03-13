@@ -1,9 +1,10 @@
-package com.yanvelasco.bff_agendador_tarefas.controller;
+package com.yanvelasco.bff_agendador_tarefas.domain.user.controller;
 
-import com.yanvelasco.bff_agendador_tarefas.business.dto.EnderecoDTO;
-import com.yanvelasco.bff_agendador_tarefas.business.dto.TelefoneDTO;
-import com.yanvelasco.bff_agendador_tarefas.business.dto.UsuarioDTO;
-import com.yanvelasco.bff_agendador_tarefas.business.service.UsuarioService;
+
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.EnderecoDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.TelefoneDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.dto.UsuarioDTO;
+import com.yanvelasco.bff_agendador_tarefas.domain.user.service.UsuarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
